@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta charset="utf-8" />
+    <title>Votar - Eleição estudantil</title>
+
+    <link rel="stylesheet" href="css/master.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="row p-2 bg-dark text-warning align-items-center">
+      <div class="col">
+        <p class="display-4 ml-3 ">Eleição Estudantil</p>
+      </div>
+
+      <div class="col-auto ml-3 dropdown order-last">
+        <button
+          class="btn btn-warning bg-dark text-white dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="cadastrar.html">Cadastro</a>
+        </div>
+      </div>
+    </header>
+
+    <form class=" container-fluid w-75" action="" method="post">
+      <div class="d-inline bg-white text-warning input-groupform-row">
+        <!-- Inicio da div com class corpo -->
+        <p class="display-4 text-center">Votar</p>
+        <br />
+
+        <h4 class="display-5">Categorias</h4>
+
+        <div class="d-inline bg-white text-warning input-groupform-row">
+          <!-- Separador -->
+
+          <div
+            class="w-100 d-none d-md-block shadow-sm p-3 mb-3 bg-white rounded"
+          ></div>
+
+          <!-- Separador -->
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="lider"> Líder </label>
+
+              <br />
+
+              <select class="custom-select" id="lider" name="lider" required>
+                <option selected disabled>Escolha</option>
+                <option value="1">Fulano</option>
+                <option value="2">Sicrano</option>
+                <option value="3">Mario</option>
+                <option value="4">Sula</option>
+                <option value="5">Marta</option>
+                <option value="6">Balotelli</option>
+              </select>
+            </div>
+
+            <!-- Inicio da div para textarea de justificativa -->
+            <div class="col-md-3 order-first">
+              <label for="justificar">
+                Justificar voto
+              </label>
+
+              <br />
+
+              <textarea
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Digite aqui..."
+                maxlength="200"
+                max-vm="50"
+                min-vh="40"
+                required
+              ></textarea>
+            </div>
+            <!-- Fim da div para textarea de justificativa-->
+
+            <!-- Inicio da div para label e input range afinidade -->
+            <div class="col order-first">
+              <label for="afinidade">- Afinidade +</label><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="1"
+                id="afinidade"
+              />
+            </div>
+            <!-- Fim da div para label e input range afinidade -->
+
+            <div class="col-auto order-last">
+              <div class="col align-self-end">
+                <img
+                  id="lider"
+                  src="img/user_64px_offgender.png"
+                  alt="..."
+                  class="img-thumbnail"
+                />
+              </div>
+            </div>
+
+            <!-- Inicio da div para label e input radio sexo -->
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="Vice"> Vice </label>
+
+              <br />
+
+              <select class="custom-select" id="Vice" name="lider" required>
+                <option selected disabled>Escolha</option>
+                <option value="1">Fulano</option>
+                <option value="2">Sicrano</option>
+                <option value="3">Mario</option>
+                <option value="4">Sula</option>
+                <option value="5">Marta</option>
+                <option value="6">Balotelli</option>
+              </select>
+            </div>
+
+            <!-- Inicio da div para textarea de justificativa -->
+            <div class="col-md-3 order-first">
+              <label for="justificar">
+                Justificar voto
+              </label>
+
+              <br />
+
+              <textarea
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Digite aqui..."
+                maxlength="200"
+                max-vm="50"
+                min-vh="40"
+                required
+              ></textarea>
+            </div>
+            <!-- Fim da div para textarea de justificativa-->
+
+            <!-- Inicio da div para label e input range afinidade -->
+            <div class="col order-first">
+              <label for="afinidade">- Afinidade +</label><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="1"
+                id="afinidade"
+              />
+            </div>
+            <!-- Fim da div para label e input range afinidade -->
+
+            <div class="col-auto order-last">
+              <div class="col align-self-end">
+                <img
+                  id="Vice"
+                  src="img/user_64px_offgender.png"
+                  alt="..."
+                  class="img-thumbnail"
+                />
+              </div>
+            </div>
+
+            <!-- Inicio da div para label e input radio sexo -->
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="secretario"> Secretário </label>
+
+              <br />
+
+              <select
+                class="custom-select"
+                id="secretario"
+                name="lider"
+                required
+              >
+                <option selected disabled>Escolha</option>
+                <option value="1">Fulano</option>
+                <option value="2">Sicrano</option>
+                <option value="3">Mario</option>
+                <option value="4">Sula</option>
+                <option value="5">Marta</option>
+                <option value="6">Balotelli</option>
+              </select>
+            </div>
+
+            <!-- Inicio da div para textarea de justificativa -->
+            <div class="col-md-3 order-first">
+              <label for="justificar">
+                Justificar voto
+              </label>
+
+              <br />
+
+              <textarea
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Digite aqui..."
+                maxlength="200"
+                max-vm="50"
+                min-vh="40"
+                required
+              ></textarea>
+            </div>
+            <!-- Fim da div para textarea de justificativa-->
+
+            <!-- Inicio da div para label e input range afinidade -->
+            <div class="col order-first">
+              <label for="afinidade">- Afinidade +</label><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="1"
+                id="afinidade"
+              />
+            </div>
+            <!-- Fim da div para label e input range afinidade -->
+
+            <div class="col-auto order-last">
+              <div class="col align-self-end">
+                <img
+                  id="secretario"
+                  src="img/user_64px_offgender.png"
+                  alt="..."
+                  class="img-thumbnail"
+                />
+              </div>
+            </div>
+
+            <!-- Inicio da div para label e input radio sexo -->
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="humorista"> Humorista </label>
+
+              <br />
+
+              <select
+                class="custom-select"
+                id="humorista"
+                name="lider"
+                required
+              >
+                <option selected disabled>Escolha</option>
+                <option value="1">Fulano</option>
+                <option value="2">Sicrano</option>
+                <option value="3">Mario</option>
+                <option value="4">Sula</option>
+                <option value="5">Marta</option>
+                <option value="6">Balotelli</option>
+              </select>
+            </div>
+
+            <!-- Inicio da div para textarea de justificativa -->
+            <div class="col-md-3 order-first">
+              <label for="justificar">
+                Justificar voto
+              </label>
+
+              <br />
+
+              <textarea
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Digite aqui..."
+                maxlength="200"
+                max-vm="50"
+                min-vh="40"
+                required
+              ></textarea>
+            </div>
+            <!-- Fim da div para textarea de justificativa-->
+
+            <!-- Inicio da div para label e input range afinidade -->
+            <div class="col order-first">
+              <label for="afinidade">- Afinidade +</label><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="1"
+                id="afinidade"
+              />
+            </div>
+            <!-- Fim da div para label e input range afinidade -->
+
+            <div class="col-auto order-last">
+              <div class="col align-self-end">
+                <img
+                  id="humorista"
+                  src="img/user_64px_offgender.png"
+                  alt="..."
+                  class="img-thumbnail"
+                />
+              </div>
+            </div>
+
+            <!-- Inicio da div para label e input radio sexo -->
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="timido"> Tímido </label>
+
+              <br />
+
+              <select class="custom-select" id="timido" name="lider" required>
+                <option selected disabled>Escolha</option>
+                <option value="1">Fulano</option>
+                <option value="2">Sicrano</option>
+                <option value="3">Mario</option>
+                <option value="4">Sula</option>
+                <option value="5">Marta</option>
+                <option value="6">Balotelli</option>
+              </select>
+            </div>
+
+            <!-- Inicio da div para textarea de justificativa -->
+            <div class="col-md-3 order-first">
+              <label for="justificar">
+                Justificar voto
+              </label>
+
+              <br />
+
+              <textarea
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Digite aqui..."
+                maxlength="200"
+                max-vm="50"
+                min-vh="40"
+                required
+              ></textarea>
+            </div>
+            <!-- Fim da div para textarea de justificativa-->
+
+            <!-- Inicio da div para label e input range afinidade -->
+            <div class="col order-first">
+              <label for="afinidade">- Afinidade +</label><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="1"
+                id="afinidade"
+              />
+            </div>
+            <!-- Fim da div para label e input range afinidade -->
+
+            <div class="col-auto order-last">
+              <div class="col align-self-end">
+                <img
+                  id="timido"
+                  src="img/user_64px_offgender.png"
+                  alt="..."
+                  class="img-thumbnail"
+                />
+              </div>
+            </div>
+
+            <!-- Inicio da div para label e input radio sexo -->
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="estiloso"> Estiloso </label>
+
+              <br />
+
+              <select class="custom-select" id="estiloso" name="lider" required>
+                <option selected disabled>Escolha</option>
+                <option value="1">Fulano</option>
+                <option value="2">Sicrano</option>
+                <option value="3">Mario</option>
+                <option value="4">Sula</option>
+                <option value="5">Marta</option>
+                <option value="6">Balotelli</option>
+              </select>
+            </div>
+
+            <!-- Inicio da div para textarea de justificativa -->
+            <div class="col-md-3 order-first">
+              <label for="justificar">
+                Justificar voto
+              </label>
+
+              <br />
+
+              <textarea
+                class="form-control"
+                id="validationTextarea"
+                placeholder="Digite aqui..."
+                maxlength="200"
+                max-vm="50"
+                min-vh="40"
+                required
+              ></textarea>
+            </div>
+            <!-- Fim da div para textarea de justificativa-->
+
+            <!-- Inicio da div para label e input range afinidade -->
+            <div class="col order-first">
+              <label for="afinidade">- Afinidade +</label><br />
+              <input
+                type="range"
+                class="custom-range"
+                min="0"
+                max="5"
+                step="1"
+                id="afinidade"
+              />
+            </div>
+            <!-- Fim da div para label e input range afinidade -->
+
+            <div class="col-auto order-last">
+              <div class="col align-self-end">
+                <img
+                  id="estiloso"
+                  src="img/user_64px_offgender.png"
+                  alt="..."
+                  class="img-thumbnail"
+                />
+              </div>
+            </div>
+
+            <!-- Inicio da div para label e input radio sexo -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Separador -->
+
+      <div
+        class="w-100 d-none d-md-block shadow-sm p-3 mb-3 bg-white rounded"
+      ></div>
+
+      <!-- Separador -->
+
+      <div class="col w-100">
+        <div class="col align-self-end">
+          <br />
+
+          <button
+            type="submit"
+            class="btn btn-primary ml-5 float-right"
+            id="salvar"
+            name="salvar"
+          >
+            <img src="img/azul_ceta_baixo_25px.png" alt="salvar" />Salvar
+          </button>
+          <button
+            type="reset"
+            class="btn btn-danger ml-5 float-right"
+            id="salvar"
+            name="salvar"
+          >
+            <img src="img/azul_delete_25px.png" alt="salvar" />Corrigir
+          </button>
+        </div>
+      </div>
+
+      <!-- Fim da div para label e input submit salvar -->
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var d = new Date();
+      document.getElementById("dataehora").innerHTML = d;
+    </script>
+  </body>
+</html>

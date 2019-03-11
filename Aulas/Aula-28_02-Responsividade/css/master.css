@@ -1,0 +1,51 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1366px ) {
+  #pagina {
+    width: 100%;
+    height: 100%;
+  }
+  #conteudo {
+    width: 80%;
+    height: 100%;
+    float: left;
+  }
+  #menulateral {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  #menulateral {
+    display: none;
+  }
+  #conteudo {
+    width: 100%;
+    height: 100%;
+  }
+  body{
+      font-size: 120%;
+  }
+}
+
+#pagina{
+    background-color: aquamarine;
+}
+
+#conteudo{
+    background-color: brown;
+}
+
+#menulateral{
+    background-color:chartreuse;
+}
+

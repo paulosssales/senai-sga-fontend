@@ -1,0 +1,26 @@
+table{
+  font-family: verdana;
+  width:500px;
+}
+
+td{
+    background-color: #d2f0fc;
+}
+
+td.abaImpar{
+    background-color: #b2d5f6;
+}
+
+td.abaEsquerda{
+  padding-left:5px;
+  style="color:white;
+  background-color:#b2d5f6;
+  padding-left:5px;
+}
+
+td.titulo{
+  text-align:center;
+  padding-left:5px;
+  background-color: #26d7e8;
+  color: white;
+}

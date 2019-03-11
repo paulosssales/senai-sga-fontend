@@ -1,0 +1,86 @@
+body{
+	margin: 0 auto;
+	font-family: verdana,arial;
+	background-color: #fff0dd;
+}
+
+div.cabecalho{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: 50px;
+	min-width: 650px;
+	max-height: 50px;
+	background-color: gold;
+	color: black;
+}
+
+h1.titulo{
+	margin-top: 0;
+	padding-left: 20px;
+	padding-top: 5px;
+	color: gold;
+	background-color: black;
+}
+
+div.corpo{
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-color: gold;
+	border-width: 2px;
+	text-align: center;
+	width: 660px;
+	height: auto;
+	min-width: 650px;
+}
+
+div.corpoAlfabeto{
+	padding-left: 10px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-color: gold;
+	border-width: 2px;
+	text-align: left;
+	width: 650px;
+	height: auto;
+	min-width: 630px;
+}
+
+h2.welcome{
+	color: black;
+	text-align: center;
+	text-decoration: underline gold;
+}
+
+p{
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 1px;
+	}
+
+nav.menu{
+	margin-left: auto;
+	float: right;
+	font-size: 10px;
+	color: red;
+	background-color: gold;
+	height: 39px;
+}
+
+.botaomenu{
+	height: 39px;
+	border-style: none;
+	color: gold;
+	background-color: black
+}
+
+.botaoback{
+	width: 40px;
+	height: 40px;
+	float: right;
+	padding-right: 10px;
+}

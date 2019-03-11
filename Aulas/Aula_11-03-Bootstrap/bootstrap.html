@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aux.css" />
+
+    <title>BootStrap</title>
+  </head>
+  <body>
+    <div id="corpo" class="container">
+      <h1>Welcome to BootStrap</h1>
+
+      <form action="" method="POST">
+        <div class="row">
+          <div class="azul col-md-6">
+            div dir
+          </div>
+          <div class="col-md-6 verde">
+            div são
+          </div>
+
+          <hr />
+
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-group col-md-6">
+              <label for="nome">Nome</label>
+              <input
+                class="form-control"
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite seu nome"
+              />
+            </div>
+
+            <div class="form-group col-md-3 ">
+              <label for="cpf">CPF</label>
+              <input
+                class="form-control"
+                type="text"
+                name="cpf"
+                id="cpf"
+                placeholder="Digite seu nº de cpf"
+              />
+            </div>
+
+            <div class="form-group col-md-3 ">
+              <label for="rg">RG</label>
+              <input
+                class="form-control"
+                type="text"
+                name="rg"
+                id="rg"
+                placeholder="Digite seu nº de rg"
+              />
+            </div>
+
+            <div class="form-group col-md-6 ">
+              <label for="datanasc">Data de Nascimento</label>
+              <input
+                class="form-control"
+                type="date"
+                name="datanasc"
+                id="datanasc"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contato</legend>
+
+            <div class="form-group col-md-2 ">
+              <label for="fixo">Telefone</label>
+              <input
+                class="form-control"
+                type="tel"
+                name="fixo"
+                id="fixo"
+                placeholder="(99) 9999-9999"
+              />
+            </div>
+
+            <div class="form-group col-md-2 ">
+              <label for="fixo">Celular</label>
+              <input
+                class="form-control"
+                type="tel"
+                name="fixo"
+                id="fixo"
+                placeholder="(99) 99999-9999"
+              />
+            </div>
+
+            <div class="form-group col-md-4 ">
+              <label for="email">Email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Anything@Gmail.com"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <div class="form-group col-md-6 ">
+              <label for="logradouro">Logradouro</label>
+              <input
+                class="form-control"
+                type="text"
+                name="logradouro"
+                id="logradouro"
+                placeholder="Digite seu logradouro"
+              />
+            </div>
+
+            <div class="form-group col-md-5 ">
+              <label for="rua">Rua</label>
+              <input
+                class="form-control"
+                type="text"
+                name="rua"
+                id="rua"
+                placeholder="Rua pricinpal"
+              />
+            </div>
+
+            <div class="form-group col-md-1 ">
+              <label for="numero">Nº</label>
+              <input
+                class="form-control"
+                type="text"
+                name="numero"
+                id="numero"
+                placeholder="00"
+              />
+            </div>
+
+            <div class="form-group col-md-2 ">
+              <label for="cep">CEP</label>
+              <input
+                class="form-control"
+                type="text"
+                name="cep"
+                id="cep"
+                placeholder="99999-999"
+              />
+            </div>
+
+            <div class="form-group col-md-2 ">
+              <label for="estado">UF</label>
+              <select class="form-control" id="estado" name="estado">
+                <option disabled selected>Selecione</option>
+                <option>RN</option>
+                <option>RJ</option>
+                <option>TO</option>
+                <option>CE</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados de cobrança</legend>
+
+            <div class="form-group col-md-2 ">
+              <label for="bandeira">Cartão</label>
+              <select class="form-control" id="bandeira" name="bandeira">
+                <option disabled selected>Bandeira</option>
+                <option>Master</option>
+                <option>Visa</option>
+                <option>Elo</option>
+                <option>Hipercard</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-5 ">
+              <label for="numerocartao">Número</label>
+              <input
+                class="form-control"
+                type="text"
+                name="numerocartao"
+                id="numerocartao"
+                placeholder="9999 9999 9999 9999"
+              />
+            </div>
+
+            <div class="form-group col-md-2 ">
+              <label for="validade">Validade</label>
+              <input
+                class="form-control"
+                type="month"
+                name="validade"
+                id="validade"
+              />
+            </div>
+
+            <div class="form-group col-md-1 ">
+              <label for="cvs">CVS</label>
+              <input
+                class="form-control"
+                type="text"
+                name="cvs"
+                id="cvs"
+                placeholder="000"
+              />
+            </div>
+
+            <div class="form-group col-md-6 ">
+              <label for="nomecartao">Nome impreso no cartão</label>
+              <input
+                class="form-control"
+                type="text"
+                name="nomecartao"
+                id="nomecartao"
+                placeholder="Digite o nome impreso no cartão"
+              />
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <button class="btn btn-primary">Cadastrar</button>
+                <button class="btn btn-danger">Lmpar</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta charset="utf-8" />
+    <title>Cadastro - Eleição estudantil</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="row p-2 bg-dark text-warning align-items-center">
+      <div class="col">
+        <p class="display-4 ml-3 ">Eleição Estudantil</p>
+      </div>
+
+      <div class="col-auto ml-3 dropdown order-last">
+        <button
+          class="btn btn-warning bg-dark text-white dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="votar.html">Votar</a>
+        </div>
+      </div>
+    </header>
+
+    <form class=" container-fluid w-75" action="index.html" method="post">
+      <!-- Inicio da div com class corpo -->
+      <div class="d-inline bg-white text-warning input-groupform-row">
+        <p class="display-4 text-center">Cadastro</p>
+        <br />
+        <!-- Inicio da div para label e input nome -->
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 order-first">
+              <label for="nome">Nome</label>
+
+              <br />
+
+              <input
+                class="form-control"
+                type="text"
+                id="nome"
+                maxlength="25"
+                placeholder="Primeiro nome"
+                required
+              />
+            </div>
+            <!-- Fim da div para label e input nome -->
+
+            <!-- Inicio da div para label e input Sobrenome -->
+            <div class="col-md-3">
+              <label for="sobrenome">
+                Sobrenome
+              </label>
+
+              <br />
+
+              <input
+                id="sobrenome"
+                class="form-control"
+                type="text"
+                class="text"
+                name="nome"
+                maxlength="25"
+                placeholder="Sobrenome"
+                required
+              />
+            </div>
+            <!-- Fim da div para label e input Sobrenome -->
+
+            <!-- Inicio da div para label e input date data de Nascimento -->
+            <div class=" col-md-3 order-last">
+              <label for="datanasc">
+                Data Nascimento
+              </label>
+
+              <br />
+
+              <input
+                id="datanasc"
+                class="form-control"
+                type="date"
+                name="datanasc"
+                required
+              />
+            </div>
+            <!-- Fim da div para label e input date data de Nascimento -->
+
+            <!-- Inicio da div para label e input radio sexo -->
+
+            <div class="col">
+              <div class="col align-self-end">
+                <label class="form-check-label">Sexo</label>
+              </div>
+
+              <div class="col">
+                <label class="form-check-label ml-3" for="masc">
+                  <input
+                    id="masc"
+                    class="form-check-input "
+                    type="radio"
+                    name="sexo"
+                    value="masc"
+                  />
+                  Masculino
+                </label>
+
+                <label class="form-check-label ml-4" for="fem">
+                  <input
+                    id="fem"
+                    class="form-check-input"
+                    type="radio"
+                    name="sexo"
+                    value="fem"
+                  />
+                  Feminino
+                </label>
+              </div>
+            </div>
+            <!-- Fim da div para label e input radio sexo -->
+          </div>
+
+          <!-- Separador -->
+
+          <div
+            class="w-100 d-none d-md-block shadow-sm p-3 mb-3 bg-white rounded"
+          ></div>
+
+          <!-- Separador -->
+
+          <div class="row align-items-center">
+            <!-- Inicio da div para label e select ano -->
+
+            <div class="col-md-3 order-first">
+              <label for="serie"> Ano </label>
+
+              <br />
+
+              <select class="custom-select" name="ano" required>
+                <option selected disabled>Escolha</option>
+                <option value="1ano">1 Ano</option>
+                <option value="2ano">2 Ano</option>
+                <option value="3ano">3 Ano</option>
+              </select>
+            </div>
+            <!-- Fim da div para label e select ano -->
+
+            <!-- Inicio da div para label e input Email -->
+            <div class="col-md-3">
+              <label for="email">
+                E-mail
+              </label>
+
+              <br />
+
+              <input
+                id="email"
+                class="form-control"
+                type="email"
+                name="email"
+                maxlength="40"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <!-- Fim da div para label e input Email -->
+            <div class="col">
+              <label for="email">
+                Imagem
+              </label>
+
+              <br />
+              <div class="custom-file col-auto">
+                <input type="file" class="custom-file-input" id="customFile" />
+                <label class="custom-file-label" for="customFile"></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Separador -->
+
+          <div
+            class="w-100 d-none d-md-block shadow-sm p-3 mb-3 bg-white rounded"
+          ></div>
+
+          <!-- Separador -->
+
+          <div class="row align-items-center">
+            <!-- Inicio da div para label e input nomeusuario -->
+            <div class="col-md-3 order-first">
+              <label for="nomeusuario">
+                Nome de usuário
+              </label>
+
+              <br />
+
+              <input
+                type="text"
+                id="nomeusuario"
+                class="form-control"
+                name="nomeusuario"
+                maxlength="20"
+                placeholder="Nome de usuário"
+                required
+              />
+            </div>
+            <!-- Fim da div para label e input nomeusuario -->
+
+            <!-- Inicio da div para label e input password senha -->
+            <div class="col-md-3 order-last">
+              <label for="senha">
+                Senha
+              </label>
+
+              <br />
+
+              <input
+                id="senha"
+                class="form-control ml-50"
+                type="password"
+                name="senha"
+                value=""
+                maxlength="20"
+                placeholder="Senha"
+                required
+              />
+            </div>
+            <!-- Fim da div para label e input password senha -->
+          </div>
+
+          <!-- Separador -->
+
+          <div
+            class="w-100 d-none d-md-block shadow-sm p-3 mb-3 bg-white rounded"
+          ></div>
+
+          <!-- Separador -->
+
+          <div class="row">
+            <div class="col-md-6 ml-4 order-first">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="notificar"
+              />
+
+              <label class="custom-control-label" for="notificar">
+                Deseja ser notificado resultado?
+              </label>
+            </div>
+
+            <div class="col order-last ">
+              <a href="#">
+                <img
+                  class=""
+                  src="img/azul_Facebook_Circled_25px.png"
+                  alt="facebook"
+                />
+              </a>
+
+              <a href="#">
+                <img class="" src="img/azul_Twitter_25px.png" alt="twitter" />
+              </a>
+
+              <a href="#">
+                <img
+                  class=""
+                  src="img/Azul_YouTube_Squared_25px.png"
+                  alt="youtube"
+                />
+              </a>
+            </div>
+
+            <div class="col-auto order-last ">
+              <button
+                type="submit"
+                class="btn btn-primary "
+                id="salvar"
+                name="salvar"
+              >
+                <img src="img/azul_ceta_baixo_25px.png" alt="salvar" />Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- fim da div com class corpo -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+Dados pessoais
+nome
+cpf
+rg
+datanas 
+telefone 
+email
+
+Endereço
+logradouro
+n°
+cidade
+estado
+cep
+
+Cobrança
+bandeira do cartão
+cartão de credito n° 
+codigo de segurança

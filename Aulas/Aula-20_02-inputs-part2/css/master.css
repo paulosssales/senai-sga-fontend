@@ -1,0 +1,40 @@
+body{
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: gold;
+  color: white;
+}
+
+#complete-cadastro{
+  position: relative;
+  display: -moz-inline-box;
+  padding: 5px 30px;
+  background-color: blue;
+  color: gold;
+}
+
+h2{
+  color: gold;
+}
+
+div.informcao-empresa{
+  box-shadow: 5px;
+  background-position: center;
+  margin-left: 50px;
+  width: 400px;
+}
+
+img{
+  float: left;
+  background-color: gold;
+}
+
+p{
+  text-indent: 50px;
+  text-align: justify;
+  width: auto;
+}

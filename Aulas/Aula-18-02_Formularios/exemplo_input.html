@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Formulario </title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+
+      <!-- Inicio do input="text" "Qual seu nome?" -->
+      <label for="nome">
+      Qual o seu nome?<br>
+      </label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        maxlength="30"
+        size="30"
+        placeholder="Nome"
+      >
+      <!-- fim do input "Qual seu nome?" -->
+      <br>
+      <br>
+      <!-- Inicio do input="password" "Senha" -->
+      <label for="senha">
+      Senha<br>
+      </label>
+      <input
+        id="senha"
+        type="password"
+        name="senha"
+        maxlength="30"
+        size="30"
+        placeholder="Senha"
+      >
+      <!-- fim do input "Senha" -->
+      <br>
+      <br>
+
+      <!-- Inicio do input=checkbox -->
+      Você é a favor ou contra a pena de morte?<br>
+      <br>
+      <label for="concordo">
+        <input
+        id="concordo"
+        type="checkbox"
+        name="concorda"
+        value="concorda"
+        >
+        Concordo
+      </label>
+      <br>
+      <label for="discordo">
+        <input
+        id="discordo"
+        type="checkbox"
+        name="discorda"
+        value="discorda"
+        checked
+        >
+        Discordo
+      </label>
+      <!-- Fim do input=checkbox -->
+      <br>
+      <br>
+      <!-- Inicio do input=radio -->
+      <label for="masc">
+        <input id="masc" type="radio" name="sexo" value="masc"> Masculino
+      </label>
+      <br>
+      <label for="fem">
+        <input id="fem" type="radio" name="sexo" value="fem" checked> Feminino
+      </label>
+      <!-- Fim do input=radio -->
+      <br>
+      <br>
+
+      <!-- inicio dos buttons -->
+      <button type="submit" name="button">Submit</button>
+      <button type="reset" name="button">Reset</button>
+      <button type="button" name="button">Botão</button>
+      <!-- inicio dos buttons -->
+      <br>
+      <br>
+
+      <!-- inicio dos textarea -->
+      <textarea
+        name="descricao"
+        id="descricao"
+        rows="10" cols="30"
+        placeholder="Escreva aqui..."
+      ></textarea>
+      <!-- inicio dos textarea -->
+      <br>
+      <br>
+
+      <!-- inicio dos select -->
+      <label for="cidades">Cidades:</label>
+      <select class="" name="cidades" id="cidades">
+        <option disabled selected>Selecione...</option>
+        <optgroup label="Rio Grande do Norte">
+
+        <option value="Ntl">Natal</option>
+        <option value="Par">Parnamirim</option>
+        <option value="Sga">São Gonçalo</option>
+        <option value="Mcb">Macaiba</option>
+      </optgroup>
+      <optgroup label="Paraiba">
+        <option value="jpa">João Pessoa</option>
+        <option value="cgd">Campina Grande</option>
+      </optgroup>
+      </select>
+      <!-- fim dos select -->
+      <br>
+      <br>
+
+    </form>
+
+  </body>
+</html>
