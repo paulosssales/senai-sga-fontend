@@ -10,14 +10,44 @@
     <title>Site para politico</title>
   </head>
   <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand text-white" href="#">Ciro Gomes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+
     <div class="container-fluid my-5">
       <div class="row">
-        <nav class="col-md-2 bg-danger order-first"></nav>
+        <nav class="col-md-2 order-first"></nav>
 
-        <aside class="col-md-2 offset-md-1 bg-danger order-last"></aside>
+        <aside class="col-md-2 order-last"></aside>
 
-        <section class="col-md-6 offset-md-1 p-2 ">
-          <h4 class="display-4 text-white bg-primary p-2">
+        <section class="col-md-8 p-2 ">
+          <h4 class="display-4 text-white bg-primary p-2 rounded">
             Ciro Gomes (PDT) - 12
           </h4>
 
@@ -48,17 +78,36 @@
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Resistência à hegemonia do PT fragmenta oposição</h5>
+                  <p>Divisão que se aprofundou depois da eleição presidencial do ano passado.</p>
+                </div>
               </div>
+
               <div class="carousel-item">
                 <img
                   src="http://www.pdt.org.br/wp-content/uploads/2016/11/IMG_4439-1200x630.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
               </div>
+
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <img 
+                src="https://img.estadao.com.br/fotos/crop/top/350x199/resources/jpg/7/7/1547061501677.jpg" 
+                class="d-block w-100" 
+                alt="..." 
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ciro: 'Do jeito que vai, capital político de Bolsonaro não dura seis meses'</h5>
+                  <p>Ex-ministro criticou o presidente Jair Bolsonaro e os ministros Paulo Guedes, Sergio Moro e Onyx Lorenzoni</p>
+                </div>
               </div>
+
             </div>
             <a
               class="carousel-control-prev"
@@ -86,65 +135,13 @@
             </a>
           </div>
 
-          <div id="carrosselfotos" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="http://www.pdt.org.br/wp-content/uploads/2016/11/IMG_4439-1200x630.jpg"
-                  alt=""
-                  class="d-block w-100"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>
-                    PDT realiza Convenção Nacional nesta segunda-feira (18)
-                  </h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://img.estadao.com.br/fotos/crop/top/350x199/resources/jpg/7/5/1537359102057.jpg"
-                  alt=""
-                  class="d-block w-100"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Resistência à hegemonia do PT flagmenta oposição</h3>
-                </div>
-              </div>
-            </div>
-            <a
-              href="#carrosselfotos"
-              class="carousel-control-prev"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Anterior</span>
-            </a>
-            <a
-              href="#carrosselfotos"
-              class="carousel-control-next"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Próximo</span>
-            </a>
-          </div>
-        </section>
-      </div>
-    </div>
+    </section>
 
     <footer class="row"></footer>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
-    
+
   </body>
 </html>
