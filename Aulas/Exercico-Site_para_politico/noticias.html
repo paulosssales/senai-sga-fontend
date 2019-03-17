@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <title>Noticias</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+        <span class="navbar-brand text-white" href="#">Ciro Gomes</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contatos</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Buscar"
+            />
+            <button
+              class="btn btn-outline-white bg-primary text-white my-2 my-sm-0"
+              type="submit"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <div class="row my-5">
+      <nav class="col-sm-1 col-md-2 order-first"></nav>
+
+      <aside class="col-md-2 col-sm-1 bg-dark order-last"></aside>
+
+      <section class="col-xs-12 col-md-9 col-lg-8 mx-auto p-3">
+        <h4 class="text-white display-3 bg-primary">Noticias</h4>
+        <hr />
+        <div id="noticias" class="row mx-2 my-2 p-2">
+          <!-- Primeira noticia -->
+
+          <div id="n1" name="none" class="col-xs-2 mx-auto bg-danger p-2 d-block col-md-5">
+            <img
+              src="https://www.revistaforum.com.br/wp-content/uploads/2019/01/ciro.jpg"
+              alt="Ciro Gomes"
+              class="card-img-top w-100"
+            />
+            <a
+              href="#noticia1"
+              class="h3 text-white"
+              data-toggle="collapse"
+            >
+              Ciro Gomes convoca população contra reforma da Previdência
+            </a>
+
+            <div class="collapse" id="noticia1">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote text-center">
+                    <p class="card-text">
+                      O ex-ministro Ciro Gomes (PDT), candidato à presidência
+                      nas eleições do ano passado, fez uma convocação, neste
+                      sábado (16), para que a população compareça às ruas na
+                      próxima sexta-feira (22) contra a reforma da Previdência
+                      proposta pelo governo Bolsonaro que será analisada pelo
+                      Congresso Nacional.
+                    </p>
+
+                    <footer class="blockquote-footer">
+                      Fonte: <cite title="Source Title">Fórum</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+
+                <div class="card-body">
+                  <a
+                    href="https://www.revistaforum.com.br/ciro-gomes-convoca-populacao-as-ruas-contra-reforma-da-previdencia-de-bolsonaro/"
+                    class="card-link"
+                    >Saiba mais...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Segunda noticia -->
+
+          <div id="n2" class="col-xs-2 mx-auto bg-danger p-2 d-block col-md-5">
+            <img
+              src="https://img.estadao.com.br/resources/jpg/7/5/1537359102057.jpg"
+              alt="Ciro Gomes"
+              class="card-img-top w-100"
+            />
+
+            <a href="#noticia2" class="h3 text-white" data-toggle="collapse">
+              Ciro diz que ategoria só se aposentará aos 74 anos
+            </a>
+
+            <div class="collapse" id="noticia2">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">
+                    Após o desafio lançado pelo governo no Twitter, o deputado
+                    Mauro Benevides Filho (PDT-CE) afirmou ao Broadcast que a
+                    categoria que se aposentaria apenas aos 74 anos com a
+                    reforma da Previdência é a dos mineiros subterrâneos, de
+                    acordo com a regra de transição prevista na proposta.
+                  </p>
+                </div>
+
+                <div class="card-body">
+                  <a
+                    href="https://economia.estadao.com.br/noticias/geral,ciro-diz-que-categoria-so-se-aposentara-aos-74-anos-com-reforma-e-governo-rebate,70002757046"
+                    class="card-link"
+                    >Saiba mais...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="js/Jquery-teste.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
