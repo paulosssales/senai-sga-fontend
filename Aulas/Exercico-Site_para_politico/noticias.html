@@ -34,7 +34,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contatos</a>
+              <a class="nav-link text-white" href="contato.html">Contatos</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -59,23 +59,33 @@
     <div class="row my-5">
       <nav class="col-sm-1 col-md-2 order-first"></nav>
 
-      <aside class="col-md-2 col-sm-1 bg-dark order-last"></aside>
+      <aside class="col-md-2 col-sm-1 order-last"></aside>
+
+      <!-- Conteudo da section -->
 
       <section class="col-xs-12 col-md-9 col-lg-8 mx-auto p-3">
-        <h4 class="text-white display-3 bg-primary">Noticias</h4>
-        <hr />
+        <h4 class="text-primary shadow p-3 mb-5 bg-white display-3 rounded">
+          Noticias
+        </h4>
+
         <div id="noticias" class="row mx-2 my-2 p-2">
           <!-- Primeira noticia -->
 
-          <div id="n1" name="none" class="col-xs-2 mx-auto bg-danger p-2 d-block col-md-5">
+          <div
+            id="n1"
+            name="n1"
+            class="shadow p-3 mb-5 bg-white col-xs-2 mx-auto rounded p-2 d-block col-md-10"
+          >
             <img
+              id="noticia1"
               src="https://www.revistaforum.com.br/wp-content/uploads/2019/01/ciro.jpg"
               alt="Ciro Gomes"
-              class="card-img-top w-100"
+              class="collapse card-img-top w-100"
             />
             <a
+              id="noticia"
               href="#noticia1"
-              class="h3 text-white"
+              class="h3 text-danger"
               data-toggle="collapse"
             >
               Ciro Gomes convoca população contra reforma da Previdência
@@ -84,16 +94,16 @@
             <div class="collapse" id="noticia1">
               <div class="card">
                 <div class="card-body">
-                  <blockquote class="blockquote text-center">
-                    <p class="card-text">
-                      O ex-ministro Ciro Gomes (PDT), candidato à presidência
-                      nas eleições do ano passado, fez uma convocação, neste
-                      sábado (16), para que a população compareça às ruas na
-                      próxima sexta-feira (22) contra a reforma da Previdência
-                      proposta pelo governo Bolsonaro que será analisada pelo
-                      Congresso Nacional.
-                    </p>
+                  <p class="card-text">
+                    O ex-ministro Ciro Gomes (PDT), candidato à presidência nas
+                    eleições do ano passado, fez uma convocação, neste sábado
+                    (16), para que a população compareça às ruas na próxima
+                    sexta-feira (22) contra a reforma da Previdência proposta
+                    pelo governo Bolsonaro que será analisada pelo Congresso
+                    Nacional.
+                  </p>
 
+                  <blockquote class="blockquote text-center">
                     <footer class="blockquote-footer">
                       Fonte: <cite title="Source Title">Fórum</cite>
                     </footer>
@@ -103,7 +113,7 @@
                 <div class="card-body">
                   <a
                     href="https://www.revistaforum.com.br/ciro-gomes-convoca-populacao-as-ruas-contra-reforma-da-previdencia-de-bolsonaro/"
-                    class="card-link"
+                    class="card-link badge badge-primary"
                     >Saiba mais...</a
                   >
                 </div>
@@ -113,15 +123,25 @@
 
           <!-- Segunda noticia -->
 
-          <div id="n2" class="col-xs-2 mx-auto bg-danger p-2 d-block col-md-5">
+          <div
+            id="n2"
+            class="shadow p-3 mb-5 bg-white col-xs-2 mx-auto rounded p-2 d-block col-md-10 my-2"
+          >
             <img
+              id="noticia2"
               src="https://img.estadao.com.br/resources/jpg/7/5/1537359102057.jpg"
               alt="Ciro Gomes"
-              class="card-img-top w-100"
+              class="collapse card-img-top w-100"
             />
 
-            <a href="#noticia2" class="h3 text-white" data-toggle="collapse">
-              Ciro diz que ategoria só se aposentará aos 74 anos
+            <a
+              id="noticia"
+              name="n2"
+              href="#noticia2"
+              class="h3 text-danger"
+              data-toggle="collapse"
+            >
+              Ciro diz que a categoria só se aposentará aos 74 anos
             </a>
 
             <div class="collapse" id="noticia2">
@@ -134,12 +154,17 @@
                     reforma da Previdência é a dos mineiros subterrâneos, de
                     acordo com a regra de transição prevista na proposta.
                   </p>
+                  <blockquote class="blockquote text-center">
+                    <footer class="blockquote-footer">
+                      Fonte: <cite title="Source Title">Estadão</cite>
+                    </footer>
+                  </blockquote>
                 </div>
 
                 <div class="card-body">
                   <a
                     href="https://economia.estadao.com.br/noticias/geral,ciro-diz-que-categoria-so-se-aposentara-aos-74-anos-com-reforma-e-governo-rebate,70002757046"
-                    class="card-link"
+                    class="card-link badge badge-primary"
                     >Saiba mais...</a
                   >
                 </div>
@@ -150,10 +175,15 @@
       </section>
     </div>
 
+    <hr>
+
+    <footer class="row">
+      <div class="col-md-12 mx-auto bg-dark text-white">
+        <span class="float-right mr-5">© Ciro Gomes 2019</span>
+      </div>
+    </footer>
+
     <script src="js/jquery-3.3.1.slim.min.js"></script>
-
-    <script src="js/Jquery-teste.js"></script>
-
 
     <script src="js/bootstrap.min.js"></script>
   </body>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Entre em Contato</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
   </head>
   <body>
     <header>
@@ -25,12 +27,12 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#"
+              <a class="nav-link text-white" href="index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Noticias</a>
+              <a class="nav-link text-white" href="noticias.html">Noticias</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -51,6 +53,173 @@
     </header>
 
     <hr />
+
+    <div class="row my-5">
+      <section class="col-sm-12 col-md-7 col-lg-6 ml-auto mr-2">
+        <span class="shadow-sm p-3 mb-5 bg-white rounded display-4 text-danger"
+          >Entre em contato</span
+        >
+
+        <form
+          class="form-group col-sm-12 col-md-10 col-lg-8 my-5 needs-validation"
+        >
+          <div class="form-group col-md-12 col-sm-12">
+            <label for="nome" class="h3 text-primary">Nome</label>
+            <input
+              id="nome"
+              class="form-control"
+              type="text"
+              placeholder="Nome Completo"
+              required
+            />
+          </div>
+
+          <div class="form-group col-md-12 col-sm-12">
+            <label for="email" class="h3 text-primary">Email</label>
+            <input
+              id="email"
+              class="form-control"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="form-group col-md-6 col-sm-12">
+            <label for="celular" class="h3 text-primary">Número celular</label>
+            <input
+              id="celular"
+              class="form-control"
+              type="text"
+              placeholder="Número celular"
+              required
+            />
+          </div>
+
+          <div class="custom-control custom-switch col-md-10 ml-3">
+            <input
+              class="custom-control-input"
+              type="checkbox"
+              id="temwhatsapp"
+            />
+            <label
+              for="temwhatsapp"
+              class="custom-control-label h4 text-primary"
+              >Esse contato tem WhatsApp ativo?
+            </label>
+          </div>
+
+          <div class="form-group col-md-12 col-sm-10 my-4">
+            <label for="mensagem" class="h3 text-primary">Mensagem</label>
+            <textarea
+              id="mensagem"
+              class="form-control"
+              placeholder="Mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <button class="btn btn-primary float-right" type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <div
+        class="shadow p-2 mb-5 mr-auto col-sm-12 col-md-4 col-lg-5 bg-danger rounded"
+      >
+        <div class="row">
+          <div
+            class="card my-2 col-sm-12 col-md-10 col-lg-5 mx-auto float-left"
+          >
+            <!-- Facebook -->
+            <div class="card-body">
+              <img
+                src="img/logo_fb.png"
+                class="card-img-top"
+                alt="logo da pagina do Ciro Gomes no facebook"
+              />
+              <img src="img/icons8_Facebook_50px_1.png" alt="logo Facebook" />
+              <br />
+              <a
+                class="h3 text-decoration-none"
+                href="https://www.facebook.com/todoscomcirogomes"
+                >Todos com Ciro</a
+              >
+            </div>
+          </div>
+
+          <!-- Instagram-->
+
+          <div class="card my-2 col-sm-12 col-md-10 col-lg-5 mx-auto">
+            <div class="card-body">
+              <img
+                src="img/logo_fb.png"
+                class="card-img-top"
+                alt="logo da pagina do Ciro Gomes no facebook"
+              />
+              <img src="img/icons8_Instagram_50px.png" alt="logo Instagram" />
+              <br />
+              <a
+                class="h3 text-decoration-none"
+                href="https://www.instagram.com/todoscomciro/"
+                >todoscomciro
+              </a>
+            </div>
+          </div>
+
+          <!-- Twitter -->
+
+          <div
+            class="card my-2 col-sm-12 col-md-10 col-lg-5 mx-auto float-left"
+          >
+            <div class="card-body">
+              <img
+                src="img/logo_fb.png"
+                class="card-img-top"
+                alt="logo da pagina do Ciro Gomes no facebook"
+              />
+              <img src="img/icons8_Twitter_50px.png" alt="logo Twitter" />
+              <br />
+              <a
+                class="h3 text-decoration-none"
+                href="https://twitter.com/todoscomciro"
+                >@todoscomciro</a
+              >
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+
+          <div class="card my-2 col-sm-12 col-md-10 col-lg-5 mx-auto">
+            <div class="card-body">
+              <img
+                src="img/logo_fb.png"
+                class="card-img-top"
+                alt="logo da pagina do Ciro Gomes no facebook"
+              />
+              <img src="img/icons8_WhatsApp_50px.png" alt="logo WhatsApp" />
+              <br />
+              <a
+                class="h3 text-decoration-none"
+                href="https://api.whatsapp.com/send?phone=552740422476&text=Ol%C3%A1%20amigos%20da%20TodosComCiro,%20Tudo%20bem?&l=pt_BR"
+                >WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <footer class="row">
+      <div class="col-md-8 mx-auto bg-dark text-white">
+        <span class="-float-right">© Ciro Gomes 2019</span>
+      </div>
+    </footer>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
 
