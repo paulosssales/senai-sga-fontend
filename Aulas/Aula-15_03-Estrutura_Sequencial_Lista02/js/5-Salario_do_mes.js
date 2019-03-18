@@ -1,20 +1,29 @@
 let ganhaPorHora = parseFloat(prompt("Digite quanto você ganha por hora?"));
-let horasTrabalhadasNoMes = parseFloat(prompt("Quantas horas trabalhou no mes?"))
+let horasTrabalhadasNoMes = parseFloat(
+  prompt("Quantas horas trabalhou no mes?")
+);
 
-let descontos = 0.24;
+let salario_bruto = horasTrabalhadasNoMes * ganhaPorHora;
 
-if (kg > 50){
-    excesso = kg - 50;
-    multa = excesso * 4;
+let ir = (salario_bruto * 11) / 100;
+let inss = (salario_bruto * 8) / 100;
+let sindicato = (salario_bruto * 5) / 100;
 
-    alert("Excesso de peso: "+excesso+" kg, multa: R$ "+multa.toFixed(2)+".");
-    
-}else if(kg >0 ){
+let descontos = ir + inss + sindicato;
 
-    alert("Peso: "+kg+" e sem multa a pagar.");
+let salario_liquido = salario_bruto - descontos;
 
-}else{
-
-    alert("Peso inválido!")
-
-}
+alert(
+  "Salario Bruto: R$ " +
+    salario_bruto.toFixed(2) +
+    ", \nSalario: R$ " +
+    salario_liquido.toFixed(2) +
+    " \nDescontos: R$ " +
+    descontos.toFixed(2) +
+    "\nIR: R$ " +
+    ir.toFixed(2) +
+    ", \nINSS: R$ " +
+    inss.toFixed(2) +
+    ", \nSindicato: R$ " +
+    sindicato.toFixed(2)+"."
+);
