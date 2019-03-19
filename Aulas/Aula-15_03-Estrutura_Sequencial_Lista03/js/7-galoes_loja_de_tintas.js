@@ -18,9 +18,12 @@ let litros2 = parseFloat(litros);
 alert("antes do 'do while'" + litros2);
 
 do {
-  if (litros2 >= 18) {
+  if (litros2 > 18) {
     qtd_lata2++;
     litros2 = litros2 - 18;
+  } else if(litros2 < 18){
+    qtd_lata2++;
+    litros2 = litros2 - litros2;
   } else if (litros2 >= 3.6) {
     qtd_galoes2++;
     litros2 = litros2 - 3.6;
@@ -33,13 +36,6 @@ do {
 let valor_galoes2 = qtd_galoes2 * 25;
 let valor_lada2 = qtd_lata2 * 80;
 let preco_eco = valor_galoes2 + valor_lada2;
-
-if (valor_lada < preco_eco) {
-  preco_eco = valor_lada;
-  qtd_lata2 = qtd_lata; 
-  qtd_galoes2 = 0;
-} 
-
 let litros_eco = (qtd_galoes2 * 3.6) + (qtd_lata2 *18)
 
 alert(
