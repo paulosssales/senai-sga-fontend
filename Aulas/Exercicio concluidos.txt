@@ -4,8 +4,8 @@
 4º: Dicionario Nordestino *FEITO*
 5º: Tabela de horário *FEITO*
 6º: Eleição do líder da sala *QUASE FEITO*
-7º: Trabalhe conosco
+7º: Trabalhe conosco (feito)
 8º: Site Para disciplina do curso
-9º: Site sobre ecologia
+9º: Site sobre ecologia (feito)
 10º: Site para um politico (Feito)
 11º: Site responsivo para o bairro
