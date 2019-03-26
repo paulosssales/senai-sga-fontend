@@ -10,7 +10,25 @@ $(document).ready(function() {
 
     //alert("nome: " + nome + "\nSexo: " + sexo + "\nIdade: " + idade);
 
-        $("#tabela").append("<tr><td>"+nome+"</td><td>"+sexo+"</td><td>"+idade+"</td></tr>");
+    if (!nome.trim()) {
+    
+      alert("Compo nome vazio");
+    
+    } else {
+      
+      $("#tabela").append(
+        "<tr><td>" +
+          nome +
+          "</td><td>" +
+          sexo +
+          "</td><td>" +
+          idade +
+          "</td></tr>"
+      );
 
+      $("#nome").val("");
+      $("#idade").val(18);
+
+    }
   });
 });
